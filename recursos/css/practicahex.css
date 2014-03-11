@@ -1,0 +1,195 @@
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+*, *::before, *::after {
+ 	margin: 0;
+ 	-moz-box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+html {
+	/* font-family: "Segoe UI", "Source Sans Pro", Sans-serif; */
+	font-family: "Lora", Georgia, serif;
+	font-size: 62.5%;
+	line-height: 1.2;
+}
+body {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 30px;
+	bottom: 0;
+	top: 0;
+    /*background-color: #333;*/
+    background: url(../img/Hexagonos.png);
+    background-size: 100%;
+    -webkit-background-size: cover;
+  	
+}
+.hexagon {
+	position: relative;
+	display: inline-block;
+	margin: 3px 18px;
+	background-color: #3A3E6C;
+   
+	text-align: center;
+}
+.hexagon, .hexagon::before, .hexagon::after {
+	width: 67px;
+  height: 116px;
+
+}
+.hexagon::before {
+	background-color: inherit;
+	content:"";
+	position: absolute;
+	left: 0;
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+.hexagon::after {
+	background-color: inherit;
+	content:"";
+	position: absolute;
+	left: 0;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	-o-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+.hexagon:nth-child(even) {
+	/* top approx. 50% of .hexagon height + spacing */
+	top: 59px;
+}
+.hexagon:hover {
+	background-color: hsla(60, 75%, 75%, 1.0);
+	cursor: pointer;
+	z-index: 105;;
+   
+    color:blue;
+  -webkit-box-shadow:0 1px 5px 1px #000;
+  -moz-box-shadow:0 1px 5px 0 #000;
+   box-shadow:1px 1px 5px 1px #000;
+}
+
+.hexagon:not(:hover){
+  opacity: 0.8;
+  -webkit-box-shadow:0 1px 1px 0 #000;
+  -moz-box-shadow:0 1px 1px 0 #000;
+  box-shadow:0 1px 1px 0 #111;
+}
+.hexanone {
+	position: relative;
+	display: inline-block;
+	width: 67px;
+	height: 116px;
+	margin: 1px 18px;
+}
+.hexanone:nth-child(even) {
+	top: 59px;
+}
+.hexagontent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 140%;
+	font-size: 1.5rem;
+	line-height: 1.0;
+	z-index: 100;
+}
+
+.ibws-fix {
+	/* inline-block para hexagonos */
+	font-size: 0;
+}
+.honeycomb {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.parrafo
+{
+    color: white;
+    font-family: "Lora", Georgia, serif;
+	font-size: 120%;
+	line-height: 1.2;
+}
+.imgdiv
+{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+/*clases para acomodar las imagenes dentro del hexagono*/
+
+.imagenstop
+{
+    background:url(../img/Stop.png);
+    width: 100px;
+    height: 100px; 
+}
+.cedapaso
+{
+    background:url(../img/ceda%20el%20paso.png);
+    width: 100px;
+    height: 100px; 
+}
+.gasolinera
+{
+    background:url(../img/gasolinera.png);
+    width: 100px;
+    height: 100px; 
+}
+.hotel
+{
+    background:url(../img/hotel%20o%20motel.png);
+    width: 100px;
+    height: 100px; 
+}
+.mecanico
+{
+    background:url(../img/mecanico.png);
+    width: 100px;
+    height: 100px; 
+}
+
+.medico
+{
+    background:url(../img/medico.png);
+    width: 100px;
+    height: 100px; 
+}
+.parada
+{
+    background:url(../img/parada%20de%20autobus.png);
+    width: 100px;
+    height: 100px; 
+}
+
+.restaurant
+{
+    background:url(../img/restaurante.png);
+    width: 100px;
+    height: 100px; 
+}
+.sanitarios
+{
+    background:url(../img/sanitarios.png);
+    width: 100px;
+    height: 100px; 
+}
+.regresar
+{
+    background:url(../img/1394448403_519668-173_CurvedArrowLeftUp.png);
+    width: 64px;
+    height: 64px; 
+}
+
+

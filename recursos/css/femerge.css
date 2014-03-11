@@ -1,0 +1,196 @@
+﻿@charset "utf-8";
+/*
+    =========================================================================
+    Software: form-emerge.css
+    Description: Estilo CSS para el módulo para crear formularios emergentes
+                 form-emerge.js
+    Contact: http://www.wextensible.com
+    Copyright (c) 2010, Andrés de la Paz
+    
+    La documentación de la clase la puede consultar en 
+    http://www.wextensible.com/como-se-hace/mensaje-emergente/mensaje-emergente-6.html
+    
+    ACTUALIZACIONES IMPORTANTES:
+    
+    Noviembre 2013: Usaba visibility para mostrar o ocultar un formulario. Pero con
+    visibility el formulario no se descarga del DOM y mantiene el espacio visual. Así
+    aunque oculto si es más ancho que el body entonces la página se alarga por la 
+    derecha, efecto no deseado en móviles. Con display block/none esto no pasa.
+    
+    Octubre 2013: Eliminada definitivamente la función estiloNoCss(). Ahora uso
+    vpForCss para gestionar si un elemento soporta "opacity" y "user-select".    
+    
+    Septiembre 2013: Uso de Touch Events. Los elementos de título y botón cerrar
+    pasan a ser DIV (antes eran SPAN).
+    
+    Septiembre 2010: Las propiedades "opacity" y "user-select" no son aún estándar
+    en CSS 2.1. Cómo las tenía incluidas aquí, ahora las quitamos para poder 
+    validar el documento. Se aplican con el módulo general.js, función
+    estiloNoCss().
+
+    ========================================================================== 
+*/
+
+/* ==================== CONTENEDOR FORMULARIO GENERAL==================== */
+form.CLPREform-emerge {
+    font-size: 1em; /*el tamaño de la fuente de todo el emergente afecta a la presentación*/
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;    
+    border: rgb(230,230,205) outset 3px;
+    background-color: rgb(230,230,205);
+    position: absolute;
+    height: auto;
+    padding: 0.1em;
+    display: none;
+    }
+
+/* =========== BARRA SUPERIOR DE TITULO Y BOTÓN "X" DEL EMERGENTE ========= */
+
+form.CLPREform-emerge div.CLPREform-emerge-cabeza  {
+    background-color: rgb(49, 99, 98); 
+    color: orange; 
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    }
+
+form.CLPREform-emerge div.CLPREform-emerge-cabeza div.CLPREform-emerge-boton-cerrar {
+    text-align: center;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    float: right;
+    background-color: maroon;
+    color: white;
+    cursor: pointer;
+    }
+
+form.CLPREform-emerge div.CLPREform-emerge-cabeza div.CLPREform-emerge-titulo {
+    padding-left: 0.2em;
+    height: 1.5em;
+    line-height: 1.5em;
+    overflow: hidden;
+    cursor: move;
+    }
+
+/* ============== CUERPO INTERIOR DEL EMERGENTE =======================*/
+
+form.CLPREform-emerge div.CLPREform-emerge-interior {
+    clear: both;
+    padding: 0;
+    margin: 0.2em;
+    font-size: 1em;
+    overflow: hidden;
+    /*A efectos de prevenir el font-bosting en móviles he dotado de max-height 
+    de 100000px a todos los DIV en el archivo cabeza-pie.css, pero 
+    aquí sucede algo inesperado con IE8. Con algunos emergentes como los
+    de las aplicaciones graficas lineales y diagramas al modificarse el ancho
+    le da la máxima altura. NI LO ENTIENDO NI MERECE TAMPOCO VER EL PORQUÉ,
+    pero aquí le quitamos ese max-height a este div */
+    max-height: none;
+    }
+
+form.CLPREform-emerge div.CLPREform-emerge-interior input.CLPREform-emerge-tipo-texto {
+    border: 0;
+    border-bottom: dotted 1px;
+    margin-right: 0.2em;
+    color: maroon;
+    font-family: Courier New;
+    font-size: 0.8em;
+    background-color: rgb(230,230,205);
+    }
+
+/* ===========CUERPO INFERIOR CON BOTONES "ACEPTAR", "CANCELAR", "APLICAR"  =======*/
+
+form.CLPREform-emerge fieldset.CLPREform-emerge-botones {
+    text-align: right;
+    padding: 0;
+    margin: 0.2em;
+    padding: 0 0 0.1em 0;
+    border-radius: 0.5em;
+    }
+form.CLPREform-emerge fieldset.CLPREform-emerge-botones * {
+    /*display: inline-block;*/
+    margin: 0.2em;
+    
+    }
+/* ==========CONTENEDORES DE PESTAÑAS================================= */
+
+form.CLPREform-emerge table.CLPREform-emerge-tabs {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 0;
+    }
+
+
+form.CLPREform-emerge table.CLPREform-emerge-tabs th.CLPREform-emerge-tabck {
+    border: gray solid 1px;
+    border-bottom: 0;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    background-color: gray;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    font-weight: normal;
+    cursor: pointer;    
+    }
+    
+form.CLPREform-emerge table.CLPREform-emerge-tabs th.CLPREform-emerge-tabcks {
+    border: 0;
+    border-bottom: gray solid 1px;
+    }    
+
+form.CLPREform-emerge table.CLPREform-emerge-tabs td {
+    border: gray solid 1px;
+    border-top: transparent solid 1px;
+    }
+
+form.CLPREform-emerge div.CLPREform-emerge-tabdiv { 
+    padding: 0.2em;
+    overflow: auto;
+    display: none;
+    width: 30em;
+    height: 5em;
+    }
+    
+    
+/* =================BOTONES DIMENSIONAR================================= */ 
+    
+form.CLPREform-emerge div.CLPREform-emerge-dimensionar { 
+    /* Para que no aparezcan los botones de dimensionar en ningún formulario
+       poner este display: none */
+    display: block;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    text-align: center;
+    }
+form.CLPREform-emerge div.CLPREform-emerge-dimensionar input {
+    width: 50%;
+    }    
+
+/* =================PANTALLA================================= */
+div#IDPREpantalla {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;               
+    width: 100%;
+    height: 100%;
+    background-color: white; 
+    z-index: 5;
+    }
+
+
+/* =================MARCO MOVER================================= */
+div.CLPREmarco {
+    position: fixed;
+    display: none;  
+    background-color: navy;   
+    cursor: move;
+    border: 0;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    }
+    
+

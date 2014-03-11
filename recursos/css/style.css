@@ -1,0 +1,318 @@
+/*log */
+
+.log
+{
+    position: absolute;
+    direction: rtl;
+    alin align-self: center;
+}
+#liga
+        {
+           background-color:rgba(0, 0, 0, .75);
+        }
+.a-lg
+        {
+            
+         
+            font-size: 18px;
+            text-decoration:none;
+            color:#fff;
+            position:relative; left:1150px;
+    text-align:center;
+    -webkit-transition:all 1s;
+        }
+.a-lg:hover
+        {
+            
+         
+            font-size: 18px;
+            text-decoration:none;
+            color:FFFC00;
+    -webkit-transition:all 1s;
+        }
+/*Iconos*/
+
+
+
+#cerrar
+{
+
+    position: absolute;top: 25px;
+}
+#cerrar:hover
+{
+
+    color: red;
+}
+
+#logoico
+
+{
+width:500px;
+height:250px;
+position:absolute; left:400px; top:5px;
+-webkit-transition:all 1s;
+}
+#logoico:hover
+{
+-webkit-transform:scale(1.1,1.1);
+-webkit-transition:all 1s;
+
+}
+
+                    #liga
+                    {
+                     background-color: #000;
+                     
+                    }
+                    .login
+                    {
+                    
+                    position: relative; left: 680px; top: -10px;
+                    }
+                    .login2
+                    {
+                    color: #ffffff;
+                    position: relative; left: 680px; top: -10px;
+                    font-family: Britannic Bold;
+                    }
+                    .login_in
+                    {
+                    color: #ffffff;
+                    position: relative; left: 1150px; top: -10px;
+                    font-family: Britannic Bold;
+
+                    }
+                    .login_us
+                    {
+                    color: #FFFF00;
+                    position: relative; left: 1150px; top: -10px;
+                    font-family: Britannic Bold;
+
+                    }
+                    input
+                    {
+                    border-radius: 3px;
+                    color: #000;
+                    }
+body
+                    {
+                        background-image:url("../../recursos/img/fondo.png");
+                        background-repeat:no-repeat;
+                    
+                        
+                        
+                    }
+
+                    #adv
+                    {
+                        width: 250px;
+                        height: 250px;
+                        position: absolute;
+                        bottom: 0px;
+                        right: 5px;
+
+                    }
+
+#bocadillo {
+padding: 10px;
+width: 250px;
+height: 120px;
+position: absolute;
+bottom: 220px; right:50px;
+border-radius: 50px;
+background-color: rgba(0, 0, 0, .50);
+font-family: "trebuchet ms", tahoma, verdana, sans-serif;
+font-size: 1.4em;
+ margin-left: 8%;
+ 
+}
+#bocadillo_user{
+padding: 10px;
+width: 260px;
+height: 170px;
+position: absolute;
+bottom: 230px; right:50px;
+border-radius: 50px;
+background-color: rgba(0, 0, 0, .50);
+font-family: "trebuchet ms", tahoma, verdana, sans-serif;
+font-size: 1.4em;
+ margin-left: 8%;;
+ 
+}
+
+
+.globos
+{
+color: white;
+font-size: 16px;
+}
+.globos:hover
+{
+color: yellow;
+cursor: pointer;
+}
+#saludo
+{
+    text-align:center;
+    color: white;
+    font-size: 16px;
+}
+#faq
+{
+  position:relative; left: 20px;
+}
+#con
+{
+ position:relative; left: 20px;
+}
+#term
+{
+ position:relative; left: 20px;
+}
+
+
+
+#juegos
+{
+ position:absolute; top:350px; left:585px;
+    width:170px;
+    height:170px;
+    -webkit-transform:rotate(45deg);
+    -webkit-transition:all 1s;
+}
+#agenda
+{
+
+    position:absolute; top:250px; left:400px;
+    width:130px;
+    height:130px;
+    -webkit-transform:rotate(45deg);
+    -webkit-transition:all 1s;
+}
+#informacion
+{
+    position:absolute; top:250px; left:800px;
+    width:130px;
+    height:130px;
+    -webkit-transform:rotate(45deg);
+    -webkit-transition:all 1s;
+}
+#noticias
+{
+     position:absolute; top:510px; left:800px;
+    width:130px;
+    height:130px;
+    -webkit-transform:rotate(45deg);
+    -webkit-transition:all 1s;
+
+}
+#carro
+{
+    position:absolute; top:510px; left:400px;
+    width:130px;
+    height:130px;
+    -webkit-transform:rotate(45deg);
+    -webkit-transition:all 1s;
+
+}
+#juegos:hover
+{
+ 
+    
+    -webkit-transform:scale(1.1,1.1) rotate(45deg);
+    -webkit-transition:all 1s;
+}
+#agenda:hover
+{
+
+    
+    -webkit-transform:scale(1.1,1.1) rotate(45deg);
+    -webkit-transition:all 1s;
+}
+#informacion:hover
+{
+    
+    -webkit-transform:scale(1.1,1.1) rotate(45deg);
+    -webkit-transition:all 1s;
+}
+#noticias:hover
+{
+    
+    -webkit-transform:scale(1.1,1.1) rotate(45deg);
+    -webkit-transition:all 1s;
+
+}
+#carro:hover
+{
+    
+    -webkit-transform:scale(1.1,1.1) rotate(45deg);
+    -webkit-transition:all 1s;
+
+}
+*{margin: 0;}
+a:link{text-decoration:none;}   
+
+
+.inputs
+{
+    width: 230px;
+    margin-left:15px;
+    font-family: arial, sans-serif;
+font-size: 14px;
+
+}
+.titulo
+{
+    vertical-align: top;
+    margin-left: 84px;
+    margin-top: -9px;
+
+}
+ .moverNom
+{
+    margin-left: 105px;
+}
+ .moverCE
+{
+    margin-left: 27px;
+}
+ .moverAsun
+{
+    margin-left: 111px;
+}
+ .moverCont
+{
+   margin-left: 87px;
+}
+ .CamTon:hover
+            {
+                color:#ce6800;
+                background-color: #fff;
+                border-color: #ce6800;
+                cursor:pointer;
+                -webkit-transition:all 0.5s;
+                -mos-transition:all 0.5s;
+                -o-transition:all 0.5s;
+            }
+.BotonEnviar
+            {
+color: white;
+background-color: #ce6800;
+border-color: #ce6800;
+margin-left: 10px;
+border-radius: 8px;
+font-family: arial, sans-serif;
+font-size: 14px;
+            }
+.textos
+{
+  
+    font-family: arial, sans-serif;
+font-size: 14px;
+
+}
+p.trigger:hover {cursor: pointer; color:#FF8000;}
+div.info{display: none;}
+#reg_us{color:#FFFFFF;position: absolute;left:1150px; top: 15px;}
+#reg_us:hover{color:#FFFF00; cursor: pointer;}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <meta charset="utf-8"/>
+        <link rel="stylesheet" href="dist/css/bootstrap.css">
+        <script type="text/javascript" src="dist/js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+    
+</head>
+
+    
+    <body style="background:gray;">
+        
+        
+        
+        <div class="article">
+          <h2><span>Mandanos</span> Un Correo</h2><div class="clr"></div>
+         
+            <FORM onsubmit="return formulario(this)">
+                
+               <!-- <h1>Envíanos un mensaje</h1>-->
+
+                <B>Nombre:</B><B id="obli">*</B><BR>
+                <input type=text NAME=nombre size=33 maxlength="20" onkeypress="Letras()"><BR><BR>
+
+                <B>Dirección de correo electrónico:</B><B id="obli">*</B><BR>
+                <input type=text NAME=email size=33 maxlength="30"><BR><BR>
+                
+                <B>Asunto:</B><B id="obli">*</B><BR>
+                <input type=text NAME=asunto size=33 maxlength="50" onkeypress="Letras()"><BR><BR>
+
+                <B>Comentarios:</B><B id="obli">*</B><BR>
+                <TEXTAREA NAME=comentarios ROWS=10 COLS=42 WRAP></TEXTAREA><BR>
+                
+                
+                <INPUT ID="tam" TYPE=SUBMIT VALUE="Envíar" STYLE="width:80px; height:35px">
+                <INPUT ID="tam" TYPE=SUBMIT  ET VALUE="Cancelar" STYLE="width:80px; height:35px">
+
+                
+                
+                </FORM>
+            
+        </div>
+        
+        
+           
+    </body>
+    
+</html>

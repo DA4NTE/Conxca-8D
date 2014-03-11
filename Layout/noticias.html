@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+	<title>Ejemplo de noticias</title>
+	<link href="../recursos/css/noticias.css" rel="stylesheet" type="text/css">
+	<link href="../recursos/css/templatemo_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../recursos/css/flexslider.css" type="text/css" media="screen" />
+
+	<!-- Modernizr -->
+  	<script src="../recursos/js/modernizr.js"></script>
+
+	<!-- HTML 5 shim for IE backwards compatibility -->
+		<!-- [if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
+	<!-- 
+	Credits
+	Equal Height Columns http://www.hongkiat.com/blog/css-equal-height/ -->
+</head>
+    
+      
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="../recursos/js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+<body class="templatemo_juice_bg">
+	<div id="main_container">
+		<div class="container" id="home">
+			<div class="row col-wrap">	
+                <div  id="left_container" class="col col-md-1 col-sm-12">
+                    <nav>
+						<ul class="nav">
+							<li class="active"><a href="#">MENU</a></li>				
+						</ul>
+					</nav>
+                 </div>
+                
+				<div id="left_container" class="col col-md-3 col-sm-12">
+					<form >
+						<div>
+							<input type="text" class="form-control" name="buscar">
+						</div>
+						<button type="submit" name="Search">Buscar</button>
+					</form>
+					<div>
+						<a  href="#" rel="nofollow"><img src="../recursos/img/facebook.png" alt="Like us on Facebook"></a>
+						<a href="#"><img src="../recursos/img/twitter.png" alt="Follow us on Twitter"></a>
+						<a href="#"><img src="../recursos/img/rss.png" alt="RSS feeds"></a>
+					</div>
+				</div>
+				<div id="right_container" class="col col-md-9 col-sm-12">
+                
+					<div class="row">
+                    	<div class="col col-md-12">
+                        
+                    		<h2>Bienvenido a la sección de Noticias</h2> 
+
+                            <div class="flexslider">
+                              <ul class="slides">
+                                <li><img src="../recursos/img/templatemo_flower.jpg" alt="slide 1" /></li>
+                                <li><img src="../recursos/img/templatemo_flower2.jpg" alt="slide 2" /></li>
+                               
+                              </ul>
+                            </div>
+        				</div>                 
+                    </div>
+					
+                    <article class="row">
+						<div class="col col-md-12">
+							<img src="../recursos/img/templatemo_tn_1.jpg" alt="Templatemo Pic 1" class="img-thumbnail img-responsive img_left">
+                            <h3>Ejemplo</h3> 
+							<p>Botany is free responsive template from <b>templatemo</b> using Bootstrap that can be used for any website. In iaculis lectus vel est luctus, et laoreet dolor scelerisque. Sed a erat nunc. Nam est eros, commodo vitae nisl sed, consectetur dapibus lacus. Ut lectus libero, condimentum quis.
+							</p>
+							<p><a rel="nofollow" class="btn btn-primary" role="button">View More</a></p>
+						</div>								            
+					</article>
+					<article class="row">
+						<div class="col col-md-12">
+							<img src="../recursos/img/templatemo_tn_2.jpg" alt="Templatemo Pic 2" class="img-thumbnail img-responsive img_left">
+                            <h3>Ejemplo</h3>
+							<p>In orci tellus, tempor vel neque at, pulvinar dignissim quam. Suspendisse tempus, tortor sed ullamcorper elementum, sapien velit viverra ante, at laoreet mauris sapien tempus quam. Nulla fermentum sapien sapien, ac tincidunt neque suscipit id. Vivamus erat purus, iaculis sit amet velit rhoncus, viverra imperdiet.</p>
+							<p><a rel="nofollow" class="btn btn-primary" role="button">View More</a></p>
+						</div>							
+					</article>               
+				</div>
+			</div>
+			
+		</div>		
+	</div>
+  
+  
+</body>
+<script type='text/javascript' src='../recursos/js/logging.js'></script>
+</html>
